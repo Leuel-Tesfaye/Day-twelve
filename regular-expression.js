@@ -8,3 +8,33 @@
  * i : case insensitive flag (it search for both lowercase and uppercase)
  * m : multiline 
  */
+
+// creating a Regular expression without global and case insensitive flag .
+let pattern = 'love'
+let regExp = new RegExp(pattern)
+console.log(regExp)
+
+// declaring regular expression with global and case insensitive flag 
+let patter2 = 'love'
+let flag = 'gi'
+let regX = new RegExp (patter2, flag)
+console.log(regX)
+
+// regular expression objects 
+// test() : test for a match in a string . it returns true or false 
+const str = 'I want to be the best frontend developer'
+const check = /developer/
+const result = check.test(str)
+console.log(result)
+
+// match () : returns an array containing all of the matches, including capturing groups or null if no match is found 
+const string = ' I love javascript programming language '
+const checkPattern = /programming/
+const output = string.match(checkPattern)
+console.log(output)
+
+// search () : tests for a match in  a string. it differs from test () because this returns the index 
+
+const input = '30 days of javascript programming tutorial'
+const find = 'days'
+const results = 
