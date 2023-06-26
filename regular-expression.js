@@ -37,4 +37,14 @@ console.log(output)
 
 const input = '30 days of javascript programming tutorial'
 const find = 'days'
-const results = 
+const results = input.search(find)
+console.log(results)
+
+/**
+ * replacing a substring 
+ * replace() :  executes a search for a match in a string and replace the matched substring with replacement string
+ */
+const str1 = 'I would like to learn javascript '
+const matchReplace = str1.replace(/javascript|Javascript/, 'Front End development')
+console.log(matchReplace)
+
